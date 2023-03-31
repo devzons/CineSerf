@@ -71,9 +71,13 @@ export const MovieDetail = () => {
           </p>
           <p className="my-4">
             <span className="mr-2 font-bold">Movie Homepage:</span>
-            <a href={movie.homepage} target="_blank" rel="noreferrer">
-              {movie.homepage}
-            </a>
+            {movie.homepage ? (
+              <a href={movie.homepage} target="_blank" rel="noreferrer">
+                {movie.homepage}
+              </a>
+            ) : (
+              ''
+            )}
           </p>
         </div>
       </section>
