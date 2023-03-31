@@ -1,5 +1,5 @@
-import { Card } from '../components'
 import { useFetch } from '../hooks/useFetch'
+import { Card } from '../components'
 
 export const MovieList = ({ apiPath }) => {
   const { data: movies } = useFetch(apiPath)
